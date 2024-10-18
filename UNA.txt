@@ -1,0 +1,18 @@
+Parking Deck-LaGrange Hall:75
+Parking Deck-Floyd Science Building:100
+Parking Deck-Stevens Hall:75
+LaGrange Hall-Floyd Science Building:125
+Stevens Hall-Collier Library:275
+Stevens Hall-Floyd Science Building:50
+Floyd Science Building-Powers Hall:275
+Floyd Science Building-The Fountain:700
+Collier Library-Parking Lot C:300
+Collier Library-The Fountain:375
+Powers Hall-Lafayette Hall:35
+Lafayette Hall-GUC:25
+GUC-Keller Hall:25
+GUC-The Fountain:275
+Keller Hall-The Fountain:200
+Keller Hall-Parking Lot A:250
+Parking Lot C-The Fountain:350
+The Fountain-Parking Lot A:300
