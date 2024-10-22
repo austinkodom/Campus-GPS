@@ -44,9 +44,13 @@ void displayPath(vector<string>, int);
 //---------------------------------------------------------------------------------------------------
 int main() {
 	Campus* campus;
+        string campusName;
 	bool flag = true;
 	
-	campus = new Campus("UNA");
+        cout << "Enter Campus Name: ";
+        cin >> campusName;
+
+	campus = new Campus(campusName);
 	
 	while (flag) {
 		/* Get the starting and ending point from the user. */

@@ -9,30 +9,23 @@ using namespace std;
  * and builds the adjacency list, node list, and map.
  */
 Campus::Campus(string name) {
-    this->campusName = name;
-
-    /* The filename should be in the format 
-     * (name of the campus).txt.
+    /* The filename should be in the 
+     * format (name of the campus).txt
      */
     string campusFile = name + ".txt";
     ifstream file(campusFile);
 
+    // Check for error opening file.
+    if (!file.is_open()) {
+        cerr << "Error opening file!" << endl;
+        exit(1);
+    }
+
     unordered_map<string, int> map;
     vector<vector<Edge>> list;
     vector<Node> locations;
-
     string line, source, destination;
     int distance;
-
-    if (!file.is_open()) {
-        cerr << "Error opening file!" << endl;
-
-        this->nodeIndexMap = map;
-        this->adjList = list;
-        this->nodes = locations;
-
-        return;
-    }
 
     while(getline(file, line)) {
         stringstream ss(line);
